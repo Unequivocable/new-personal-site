@@ -9,9 +9,7 @@ const Home = () => {
             <main>
               <section key="a">
                   <article>
-                    This site is still a bit broken on mobile. I'm currently
-                    working on the responsiveness and it should be looking
-                    better in the next few weeks.
+                    I'm currently rewriting the entire site, that's why it's several kinds of broken now.
                   </article>
                 <article>
                   This is the home page of my web development site I am building
