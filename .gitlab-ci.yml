@@ -1,0 +1,28 @@
+stages:
+    - build
+    - deploy
+
+react_build:
+    only:
+        - master
+    stage: build
+    image: node:lts
+    before_script:
+        - npm install
+    script:
+        - npm run build
+    artifacts:
+        paths:
+            - build/
+
+deploy_gcp:
+    only:
+        - master
+    stage: deploy
+    image: google/cloud-sdk
+    before_script:
+        - echo $SERVICE_KEY_FILE > /tmp/$CI_PIPELINE_ID.json
+        - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
+    script:
+        - gsutil -m cp -r build/* gs://$BUCKET_NAME
+
