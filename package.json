@@ -1,0 +1,22 @@
+{
+  "name": "dustin-siggelkows-portfolio",
+  "version": "1.0.0",
+  "description": "Dustin Siggelkow's personal portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Unequivocable/new-personal-portfolio.git"
+  },
+  "author": "Dustin Siggelkow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Unequivocable/new-personal-portfolio/issues"
+  },
+  "homepage": "https://gitlab.com/Unequivocable/new-personal-portfolio#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
