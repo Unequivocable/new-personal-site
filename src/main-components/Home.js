@@ -1,10 +1,19 @@
 import React from "react";
-import { Row, Col, Nav, Tab } from "react-bootstrap";
+import { Row, Col, Nav, Tab, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import data from "../database/portfolio";
+import Header from "../sub-components/Header";
 
 const Home = () => {
   return (
+    <>
+    <Container fluid>
+    <Row className="justify-content-center">
+    <Col xs="auto">
+      <Header />
+    </Col>
+  </Row>
+  </Container>
     <main>
       <section>
         <article>
@@ -17,7 +26,7 @@ const Home = () => {
             <Col>
               <Nav variant="pills">
                 {data.map((entry) => (
-                  <Nav.Item>
+                  <Nav.Item key={entry.eventkey}>
                     <Nav.Link eventKey={entry.eventkey}>
                       {entry.tabname}
                     </Nav.Link>
@@ -26,11 +35,11 @@ const Home = () => {
               </Nav>
             </Col>
           </Row>
-          <Row>
-            <Col xs="auto">
+          <Row className="justify-content-center">
+            <Col>
               <Tab.Content>
                 {data.map((entry) => (
-                  <Tab.Pane eventKey={entry.eventkey}>
+                  <Tab.Pane eventKey={entry.eventkey} key={entry.eventkey} className={entry.className}>
                     <p>{entry.panetext}</p>
                     <NavLink to={entry.location}>Go to {entry.tabname}</NavLink>
                   </Tab.Pane>
@@ -63,6 +72,7 @@ const Home = () => {
         </Container> */}
       </section>
     </main>
+    </>
   );
 };
 
