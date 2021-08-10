@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.portfolio {
+  margin-top: 5%;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
