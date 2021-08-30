@@ -10,9 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Dependencies
-          run: sudo npm i
+          run: |
+          sudo npm i
       - name: Build Prod App
-          run : npm run build
+          run : |
+          npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
