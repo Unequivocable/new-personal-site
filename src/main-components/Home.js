@@ -19,7 +19,7 @@ const Home = () => {
         <article>
           <p>I'm currently rewriting the entire site, that's why it's several kinds
           of broken now.</p>
-          <p>This is my portfolio of different projects I've been working on.</p>
+          <p>This is my portfolio of different projects I've been working on.  Now hosted via Firebase.</p>
         </article>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
           <Row className="justify-content-center" xs={2}>
