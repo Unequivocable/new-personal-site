@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Site Summary
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Details
+
+This is currently a static React site that does not require any backend.  It is setup with Firebase CI/CD to direct deploy on merge to master.
 
 ## Available Scripts
 
