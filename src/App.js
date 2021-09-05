@@ -6,6 +6,7 @@ import Error from "./main-components/Error";
 import About from "./main-components/About";
 import Scroll from "./main-components/portfolio/Scroll";
 import Autocomplete from "./main-components/portfolio/Autocomplete";
+import BGame from "./main-components/portfolio/BGame";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
               <Route path="/about" component={About} />
               <Route path="/scroll" component={Scroll} />
               <Route path="/complete" component={Autocomplete} />
+              <Route path="/game" component={BGame}/>
               <Route component={Error} />
             </Switch>
           </Col>

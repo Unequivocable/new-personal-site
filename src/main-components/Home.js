@@ -17,9 +17,10 @@ const Home = () => {
     <main>
       <section>
         <article>
-          <p>I'm currently rewriting the entire site, that's why it's several kinds
-          of broken now.</p>
+          <p>This site will always be a work in progress!</p>
           <p>This is my portfolio of different projects I've been working on.  Now hosted via Firebase.</p>
+          <p><a href="https://github.com/Unequivocable/"><i className="fa fa-github fa-2x" aria-hidden="true"></i>My GitHub</a></p>
+          <p><a href="https://www.linkedin.com/in/dustin-siggelkow/"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> My LinkedIn</a></p>
         </article>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
           <Row className="justify-content-center" xs={2}>

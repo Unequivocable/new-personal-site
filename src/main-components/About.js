@@ -1,8 +1,10 @@
 import React from "react";
+import Header from "../sub-components/Header";
 
 const About = () => {
   return (
     <main>
+      <Header />
       <section key="a">
         <article>
           I'm currently rewriting the entire site, that's why it's several kinds
