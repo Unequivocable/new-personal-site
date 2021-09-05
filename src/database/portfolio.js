@@ -13,6 +13,13 @@ const data = [
     location: "/complete",
     className: "portfolio"
   },
+  {
+    eventkey: "third",
+    tabname: "Bohdan's Game",
+    panetext: "This is a simple game for my son",
+    location: "/game",
+    className: "portfolio"
+  },
 ];
 
 export default data;
